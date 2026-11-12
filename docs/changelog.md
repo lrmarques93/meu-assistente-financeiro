@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 — Supabase provisionado
+- Criado projeto Supabase dedicado em São Paulo (sa-east-1).
+- Aplicada migração inicial com seis tabelas e RLS.
+- Criados índices para colunas de chaves estrangeiras.
+- Consultadas políticas RLS e executados advisors: nenhum alerta de segurança.
+- Tipos TypeScript gerados diretamente do banco.
+
+
 ## 0.2.0 — Autenticação e base de dados
 - Adicionados clientes Supabase para navegador e servidor usando cookies SSR.
 - Preparados login, cadastro, callback PKCE e middleware de proteção de rotas.
