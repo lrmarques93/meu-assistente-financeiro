@@ -2,24 +2,35 @@
 
 Sua vida financeira, sob controle. Você conversa. A inteligência organiza.
 
-Aplicacao web responsiva para organizacao financeira pessoal, com evolucao planejada para uma plataforma multiusuario.
+Aplicação web responsiva para organização financeira pessoal, com evolução planejada para uma plataforma multiusuário.
 
-## Status
+## Stack
+- Next.js 15 + React 19 + TypeScript
+- Supabase Auth + PostgreSQL
+- Vercel (deploy planejado)
 
-Projeto em fase inicial de estruturação. A primeira entrega contempla arquitetura, regras financeiras e dashboard inicial. Autenticacao, banco de dados, IA e WhatsApp ainda serao implementados.
+## Começar localmente
+1. Instale Node.js 20 ou superior.
+2. Execute `npm install`.
+3. Copie `.env.example` para `.env.local`.
+4. Preencha `NEXT_PUBLIC_SUPABASE_URL` e `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` com os dados do projeto Supabase.
+5. Execute `npm run dev`.
 
-## Stack planejada
+## Estado atual
+- Dashboard inicial responsivo.
+- Login e cadastro por e-mail/senha preparados com Supabase Auth.
+- Sessão SSR por cookies e proteção de rotas preparadas.
+- Migração SQL inicial com contas, cartões, categorias, lançamentos, rateios e orçamentos, todas com RLS.
+- A conexão com um projeto Supabase dedicado ainda precisa ser configurada e a migração aplicada.
+- Build e testes automatizados ainda precisam ser executados.
 
-- Next.js e TypeScript
-- Supabase
-- OpenAI API
-- WhatsApp Cloud API
-- Vercel
+## Documentação
+- [Requisitos](docs/requisitos.md)
+- [Arquitetura](docs/arquitetura.md)
+- [Regras financeiras](docs/regras-financeiras.md)
+- [Autenticação](docs/autenticacao.md)
+- [Implantação Supabase](docs/implantacao-supabase.md)
+- [Changelog](docs/changelog.md)
 
-## Diretrizes
-
-- Valores monetarios armazenados em centavos inteiros.
-- Transferencias entre contas proprias nao sao receitas nem despesas.
-- Pagamento de fatura nao duplica despesas ja reconhecidas nas compras.
-- Despesas compartilhadas contabilizam apenas a parte do usuario nos relatorios pessoais.
-- A IA solicita confirmacao quando nao tiver seguranca sobre os dados.
+## Segurança
+Nunca envie chaves secret/service_role ao navegador. Use somente a chave publishable em variáveis `NEXT_PUBLIC_`. Todas as tabelas expostas no schema public devem manter RLS habilitado.
