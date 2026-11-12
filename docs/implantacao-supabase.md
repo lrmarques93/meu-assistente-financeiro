@@ -1,7 +1,14 @@
 # Implantação do Supabase
 
-## Projeto
-Este repositório ainda não está conectado a um projeto Supabase dedicado. Não reutilizar o projeto da plataforma contábil: os dados financeiros precisam ficar em um projeto separado.
+## Projeto criado
+- Nome: `meu-assistente-financeiro`
+- Project ref: `kqymwzkwpcpfaezeyeiq`
+- Região: `sa-east-1` (São Paulo)
+- URL: `https://kqymwzkwpcpfaezeyeiq.supabase.co`
+- Status: `ACTIVE_HEALTHY`
+- Plano da organização no momento da criação: Free
+
+O banco é separado do projeto `plataforma-contabil`.
 
 ## Criar o projeto
 - Nome sugerido: `meu-assistente-financeiro`
