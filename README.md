@@ -21,7 +21,9 @@ Aplicação web responsiva para organização financeira pessoal, com evolução
 - Login e cadastro por e-mail/senha preparados com Supabase Auth.
 - Sessão SSR por cookies e proteção de rotas preparadas.
 - Migração SQL inicial com contas, cartões, categorias, lançamentos, rateios e orçamentos, todas com RLS.
-- A conexão com um projeto Supabase dedicado ainda precisa ser configurada e a migração aplicada.
+- Projeto Supabase dedicado criado e ativo em São Paulo.
+- Migração inicial aplicada; seis tabelas confirmadas com RLS habilitado.
+- Tipos TypeScript gerados a partir do schema real.
 - Build e testes automatizados ainda precisam ser executados.
 
 ## Documentação
